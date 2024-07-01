@@ -69,7 +69,7 @@ Popup {
 
                 Item {
                     visible: !isWindowedMode
-                    Layout.preferredHeight: 5
+                    Layout.preferredHeight: 15
                 }
 
                 TextInput {
@@ -82,7 +82,7 @@ Popup {
                     font: folderNameFont
                     horizontalAlignment: Text.AlignHCenter
                     text: folderLoader.folderName
-                    color: palette.windowText
+                    color: palette.highlightedText
                     selectByMouse: true
                     maximumLength: 255
                     onEditingFinished: {
@@ -108,7 +108,7 @@ Popup {
                     font: folderNameFont
                     horizontalAlignment: Text.AlignHCenter
                     text: folderLoader.folderName
-                    color: palette.windowText
+                    color: palette.highlightedText
                     visible: !contentRoot.nameEditing
                     elide: Text.ElideRight
                     ToolTip.visible: folderNameTextMouseArea.containsMouse ? implicitWidth > width : false
